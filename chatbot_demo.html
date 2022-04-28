@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<style>
+#livechat-button {
+  position: fixed;
+  bottom: 5px;
+  right: 32px;
+  z-index: 999;
+  color: #fefefe;
+}
+
+#livechat-assistant {
+  color: #555;
+  background: #fefefe;
+  z-index: 999;
+  margin-left: 5px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+.robo-icon {
+    width: 3em;
+    height: auto;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Live Chat -->
+<a id="livechat-button" class="text-11 hidden"><i class="fas fa-comment-alt"></i></a>
+<div id="livechat-assistant" class="col-lg-6 alert fixed-bottom hidden"></div>
+<!-- Live Chat End -->
+
+<textarea name="form-message" class="form-control" rows="5" required placeholder="Your desire"></textarea>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src='livechat.js'></script>
+<a href="https://www.flaticon.com/free-icons/robot" title="robot icons" target="_blank">Robot icons created by Freepik - Flaticon</a>
+</body>
+</html>
